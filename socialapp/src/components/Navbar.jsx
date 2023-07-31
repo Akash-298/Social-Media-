@@ -50,7 +50,7 @@ const UserBox = styled("Box")(({ theme }) => ({
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Box>
+    <Box >
       <AppBar position="sticky">
         <StyledToolbar>
           <Typography
