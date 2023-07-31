@@ -1,20 +1,18 @@
-import {
-  Badge,
-  Mail,
-  MailLock,
-  Notifications,
-  Pets,
+import {  Mail, Notifications, Pets,
 } from "@mui/icons-material";
 import {
   AppBar,
   Avatar,
+  Badge,
   Box,
   InputBase,
+  Menu,
+  MenuItem,
   Toolbar,
   Typography,
   styled,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
@@ -50,58 +48,75 @@ const UserBox = styled("Box")(({ theme }) => ({
 }));
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <AppBar position="sticky">
-      <StyledToolbar>
-        <Typography
-          variant="h6"
-          sx={{
-            display: {
-              xs: "none",
-              sm: "block",
-            },
+    <Box>
+      <AppBar position="sticky">
+        <StyledToolbar>
+          <Typography
+            variant="h6"
+            sx={{
+              display: {
+                xs: "none",
+                sm: "block",
+              },
+            }}
+          >
+            Navbar
+          </Typography>
+          <Pets
+            sx={{
+              display: {
+                xs: "block",
+                sm: "none",
+              },
+            }}
+          ></Pets>
+          <Search>
+            <InputBase placeholder="Search..."></InputBase>search
+          </Search>
+          <Icons>
+            <Badge badgeContent={4} color="error">
+            <Mail  />
+            </Badge>
+
+            <Badge badgeContent={4} color="error"> 
+             <Notifications /> 
+             </Badge>
+            <Avatar
+              sx={{ width: "20px", height: "20px" }}
+              src="./humanicon.png"
+              onClick={(e) => setOpen(true)}
+            ></Avatar>
+          </Icons>
+          <UserBox onClick={(e) => setOpen(true)}>
+            <Avatar
+              src="./humanicon.png"
+              sx={{ width: "20px", height: "20px" }}
+            ></Avatar>
+            <Typography variant="span">Akash</Typography>
+          </UserBox>
+        </StyledToolbar>
+        <Menu
+          id="demo-positioned"
+          aria-labelledby="demo-positioned-button"
+          open={open}
+          onClose={(e)=>setOpen(false)}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          trnsformOrigin={{
+            vertical: "top",
+            horizontal: "right",
           }}
         >
-          Navbar
-        </Typography>
-        <Pets
-          sx={{
-            display: {
-              xs: "block",
-              sm: "none",
-            },
-          }}
-        ></Pets>
-        <Search>
-          <InputBase placeholder="Search..."></InputBase>search
-        </Search>
-        <Icons>
-          {/* <Badge badgeContent={4} color="error"> */}
-          <Mail />
-          {/* </Badge> */}
-
-          {/* <Badge badgeContent={4} color="error"> */}
-          <Notifications />
-          {/* </Badge> */}
-          <Avatar src="./humanicon.png">
-            {" "}
-            sx={{ width: "10px", height: "10px" }}
-          </Avatar>
-        </Icons>
-        <UserBox>
-          <Avatar src="./humanicon.png">
-            {" "}
-            sx={{ width: "10px", height: "10px" }}
-          </Avatar>
-          <Typography
-            variant="span"
-           
-          >
-            Akash
-          </Typography>
-        </UserBox>
-      </StyledToolbar>
-    </AppBar>
+          <MenuItem>Profile</MenuItem>
+          <MenuItem>My account</MenuItem>
+          <MenuItem>Logout</MenuItem>
+        </Menu>
+      </AppBar>
+    </Box>
   );
 };
 export default Navbar;
