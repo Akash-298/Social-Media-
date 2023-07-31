@@ -1,0 +1,19 @@
+1)Put the universal link(<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
+) in the index.html after installing the react app using --npx create-react-app . and aftre intalling the mui library --npm install @mui/material @emotion/react @emotion/styled
+
+2)put the style tag in the index.html -->
+
+<style>
+  *{
+    font-family: "Roboto",sans-serif;
+  }
+</style>
+
+3)install the icons ny icon command ---> npm install @mui/icons-material
+
+4)import from material icons only
+
+5)import badge from the material ui
