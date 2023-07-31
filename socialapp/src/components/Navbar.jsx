@@ -76,7 +76,7 @@ const Navbar = () => {
             <InputBase placeholder="Search..."></InputBase>search
           </Search>
           <Icons>
-            <Badge badgeContent={4} color="error">
+            <Badge badgeContent={1} color="error">
             <Mail  />
             </Badge>
 
@@ -119,4 +119,6 @@ const Navbar = () => {
     </Box>
   );
 };
+
+
 export default Navbar;
