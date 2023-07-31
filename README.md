@@ -1,5 +1,5 @@
 # FriendZone App
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 A simple landing page for a social media app created using material ui and react.
 
