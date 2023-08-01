@@ -20,6 +20,7 @@ import {
           <Typography variant="h6" fontWeight={100}>
             Online Friends
           </Typography>
+
           <AvatarGroup max={7}>
             <Avatar
               alt="Remy Sharp"
@@ -55,6 +56,7 @@ import {
               src="https://material-ui.com/static/images/avatar/8.jpg"
             />
           </AvatarGroup>
+          
           <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
             Latest Photos
           </Typography>
@@ -98,7 +100,7 @@ import {
                 >
                   Ali Connors
                 </Typography>
-                {" — I'll be in your neighborhood doing errands this…"}
+                {" — I'll be doing some clubbing this weekend"}
               </React.Fragment>
             }
           />
@@ -120,7 +122,7 @@ import {
                 >
                   to Scott, Alex, Jennifer
                 </Typography>
-                {" — Wish I could come, but I'm out of town this…"}
+                {" — ohh! wow"}
               </React.Fragment>
             }
           />
@@ -148,6 +150,7 @@ import {
           />
         </ListItem>
       </List>
+      
         </Box>
       </Box>
     );
