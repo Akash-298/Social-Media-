@@ -50,7 +50,7 @@ const UserBox = styled("Box")(({ theme }) => ({
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Box >
+    
       <AppBar position="sticky">
         <StyledToolbar>
           <Typography
@@ -116,7 +116,7 @@ const Navbar = () => {
           <MenuItem>Logout</MenuItem>
         </Menu>
       </AppBar>
-    </Box>
+  
   );
 };
 
