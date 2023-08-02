@@ -62,7 +62,7 @@ const Navbar = () => {
               },
             }}
           >
-            Navbar
+            AKASH
           </Typography>
           <Pets
             sx={{

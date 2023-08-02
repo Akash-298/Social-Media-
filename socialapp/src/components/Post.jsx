@@ -27,7 +27,7 @@ const Post = ()=>{
         <CardMedia
           component="img"
           height="20%"
-          image="./louis-hansel-fg5DDCrybjA-unsplash.jpg"
+          image=""
           alt="Paella dish"
         />
         <CardContent>
