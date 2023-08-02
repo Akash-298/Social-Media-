@@ -10,7 +10,7 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 import React from "react"
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Mode, ModeNight } from "@mui/icons-material";
-const Sidebar = () => {
+const Sidebar = ({mode,setMode}) => {
     return(
         <Box  flex={1} p={2} sx={{
           display:{xs:"none",sm:"block"}  
@@ -90,20 +90,20 @@ const Sidebar = () => {
                 <DarkModeIcon/>
                 {/* <AccountBoxIcon></AccountBoxIcon> */}
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={e=>setMode(mode==="light"?"dark":"light")}/>
               {/* <ListItemText primary="" /> */}
             </ListItemButton>
           </ListItem>
         </List>
         <List>
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
               <DarkModeIcon/>
               </ListItemIcon>
               <Switch />
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
         </List>
         </Box>
         </Box>
