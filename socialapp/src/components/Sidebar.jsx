@@ -8,7 +8,9 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import SettingsIcon from '@mui/icons-material/Settings';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import React from "react"
-const Sidebar = ()=>{
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { Mode, ModeNight } from "@mui/icons-material";
+const Sidebar = () => {
     return(
         <Box  flex={1} p={2} sx={{
           display:{xs:"none",sm:"block"}  
@@ -85,21 +87,21 @@ const Sidebar = ()=>{
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
                 {/* <InboxIcon /> */}
-                <AccountBoxIcon></AccountBoxIcon>
+                <DarkModeIcon/>
+                {/* <AccountBoxIcon></AccountBoxIcon> */}
               </ListItemIcon>
-              <ListItemText primary="Profile" />
+              <Switch />
+              {/* <ListItemText primary="" /> */}
             </ListItemButton>
           </ListItem>
         </List>
         <List>
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+        <ListItem disablePadding>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                {/* <InboxIcon /> */}
-                <NightlightIcon></NightlightIcon>
+              <DarkModeIcon/>
               </ListItemIcon>
-              {/*<ListItemText primary="Profile" /> */}
-            <Switch></Switch>
+              <Switch />
             </ListItemButton>
           </ListItem>
         </List>
