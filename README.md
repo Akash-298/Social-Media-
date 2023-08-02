@@ -2,6 +2,13 @@
 
 ## A simple landing page for a social media app created using material ui and react.
 
+### SCREENSHORTS
+
+![mui 1](https://github.com/Akash-298/Social-Media-/assets/105929312/576c71a7-9005-4589-88b9-708579e9429e)
+![mui2](https://github.com/Akash-298/Social-Media-/assets/105929312/52211ae1-4982-4c9c-ae0a-ac8a6d0a51c7)
+![mui3](https://github.com/Akash-298/Social-Media-/assets/105929312/a9624cfc-cefe-46f7-b0ef-c137bc2b64a3)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
